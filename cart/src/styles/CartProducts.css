@@ -1,0 +1,8 @@
+
+div.floating {
+    position: fixed;
+    z-index: 100;
+    right: 40px;
+    top: 56px;
+    display: none;
+}
