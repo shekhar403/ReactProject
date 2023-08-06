@@ -38,9 +38,6 @@ function Cards({onSale, rating, product, priceBeforeDiscount, price, id, addToCa
     )
 }
 
-function addToCart(product, price, id, event) {
-    console.log(event)
-    // addToCart(product, price, id)
-}
+
 
 export default Cards
