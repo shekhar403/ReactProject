@@ -3,7 +3,7 @@
     font-family: 'Creepster', cursive !important;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 720px) {
     #main_name {
         font-size: 100px;
         
