@@ -1,11 +1,11 @@
 #main_name {
-    font-size: 150px;
+    font-size: 100px;
     font-family: 'Creepster', cursive !important;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 820px) {
     #main_name {
-        font-size: 100px;
+        font-size: 80px;
         
     }
 }
