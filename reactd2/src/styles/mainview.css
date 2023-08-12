@@ -2,3 +2,10 @@
     font-size: 150px;
     font-family: 'Creepster', cursive !important;
 }
+
+@media screen and (min-width: 720px) {
+    #main_name {
+        font-size: 100px;
+        
+    }
+}
