@@ -1,18 +1,24 @@
 import './App.css';
+import About from './components/About';
 import CustomCards from './components/CardHolder';
 import CustomCarousel from './components/Carousel';
+import Home from './components/Home';
 import MainView from './components/MainView';
-import CustomNavBar from './components/Navbar';
+import CustomNav from './components/Navbar';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 function App() {
   return (
     <div className="App">
       
-      <CustomNavBar />
-      <MainView />
-     <CustomCarousel />
-     <h1 className='text-white text-center p-4'>---Horror Library---</h1>
-     <CustomCards />
+      <CustomNav />
+      <Router>
+        <Routes>
+          <Route path='/home' element={<Home />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+      </Router>
+      
     </div>
   );
 }
