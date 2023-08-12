@@ -6,6 +6,7 @@ import Home from './components/Home';
 import MainView from './components/MainView';
 import CustomNav from './components/Navbar';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import Welcome from './components/Welcome';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <CustomNav />
       <Router>
         <Routes>
+          <Route path="/" element={<Welcome />} />
           <Route path='/home' element={<Home />} />
           <Route path='/about' element={<About />} />
         </Routes>
