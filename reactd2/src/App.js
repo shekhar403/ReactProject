@@ -11,7 +11,8 @@ import { useState } from 'react';
 const context = createContext();
 
 function App() {
-  let [name, setName] = useState("Unknown")
+  const [name, setName] = useState("Unknown")
+  console.log("initialise unknown")
 
   return (
     <div className="App">
@@ -23,7 +24,7 @@ function App() {
             <Route path='/home' element={<Home />} />
             <Route path='/home/:name' element={<Home />} />
             <Route path='/about' element={<About />} />
-            <Route path='home/details/:id' element={<BookDetails />} />
+            <Route path='/details/:id' element={<BookDetails />} />
           </Routes>
         </Router>
       </context.Provider>

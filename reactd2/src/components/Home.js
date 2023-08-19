@@ -22,6 +22,7 @@ function Home() {
           <h1 className='text-white text-center p-4'>---Horror Library---</h1>
           <CustomCards />
           <Button variant="danger" type='button' className='my-4' onClick={(e) => {
+            console.log("setting unknown")
             name.setName("Unknown")
             navigate(`/`)
           }}>Logout</Button>

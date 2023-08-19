@@ -13,6 +13,7 @@ function CustomForm() {
 
   const handleClick = (e) => {
     let userName = e.target.elements.formUserName.value;
+    console.log(`setting ${userName}`)
     name.setName(userName)
 
     navigate(`/home/${userName}`);

@@ -39,17 +39,14 @@ function App() {
     else {
       document.getElementById("cartsTable").style.display = "inline-block";
     }
-
   }
 
   function addToCart(product, price, id, event) {
     event.target.classList.add("disabled");
     productCartDetails.push({ idKey: id, priceKey: price, productKey: product })
-
     document.getElementById("cartCount").textContent = productCartDetails.length;
     populateTableView(productCartDetails[productCartDetails.length - 1])
     totalAmount = totalAmount + parseFloat(price.slice(1, price.length))
-
     document.getElementById("totalAmount").textContent = totalAmount
   }
 
@@ -132,8 +129,6 @@ function App() {
       <footer className="py-5 bg-dark">
         <div className="container"><p className="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
       </footer>
-
-
     </div>
   );
 }
